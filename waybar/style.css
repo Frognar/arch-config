@@ -1,0 +1,52 @@
+.{
+  font-size: 12px;
+  color: #0a0;
+}
+
+window#waybar {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.modules-left,
+.modules-center,
+.modules-right {
+  background: rgba(50, 100, 50, 0.5);
+  border-radius: 5px;
+}
+
+#workspaces button {
+  color: #050;
+  padding: 2px;
+  margin-right: 10px;
+}
+
+#workspaces button.active {
+  color: #0f0;
+}
+
+#workspaces button:hover {
+  background: rgba(0, 0, 0, 0.1);
+  border: none;
+  box-shadow: none;
+  text-shadow: none;
+  color: #0a0;	
+}
+
+#clock {
+  font-weight: bold;
+  padding: 0 10px;
+}
+
+#pulseaudio {
+  padding: 0 10px;
+}
+
+#pulseaudio:hover {
+  background: rgba(0, 0, 0, 0.1);
+  border: none;
+  box-shadow: none;
+  text-shadow: none;
+  color: #0a0;
+}
