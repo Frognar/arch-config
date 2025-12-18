@@ -19,7 +19,6 @@ window#waybar {
 #workspaces button {
   color: #050;
   padding: 2px;
-  margin-right: 10px;
 }
 
 #workspaces button.active {
@@ -36,11 +35,11 @@ window#waybar {
 
 #clock {
   font-weight: bold;
-  padding: 0 10px;
+  padding: 0 5px;
 }
 
 #pulseaudio {
-  padding: 0 10px;
+  padding: 0 5px;
 }
 
 #pulseaudio:hover {
@@ -49,4 +48,17 @@ window#waybar {
   box-shadow: none;
   text-shadow: none;
   color: #0a0;
+}
+
+#custom-power {
+  font-size: 16px;
+  margin: 0 4px;
+  padding: 0 4px;
+  color: #0f0;
+}
+
+#custom-power:hover {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  color: #f38ba8;
 }

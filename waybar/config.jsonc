@@ -1,6 +1,7 @@
-	{
+{
   "modules-left": [
     "hyprland/workspaces",
+    "hyprland/window"
   ],
 
   "modules-center": [
@@ -9,6 +10,15 @@
 
   "modules-right": [
     "pulseaudio",
+    "custom/separator",
+    "network",
+    "custom/separator",
+    "cpu",
+    "custom/separator",
+    "memory",
+    "custom/separator",
+    "tray",
+    "custom/power"
   ],
 
   "hyprland/workspaces": {
@@ -28,13 +38,52 @@
   },
 
   "pulseaudio": {
-    "format": "{icon}   {volume}%",
-    "format-muted": "󰖁 muted",
+    "format": "{volume}% {icon} {format_source}",
+    "format-bluetooth": "{volume}% {icon} {format_source}",
+    "format-bluetooth-muted": " {icon} {format_source}",
+    "format-muted": " {format_source}",
+    "format-source": " ",
+    "format-source-muted": " ",
     "format-icons": {
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
       "default": ["", "", ""]
     },
-    "scroll-step": 5,
     "on-click": "pavucontrol",
+    "on-click-right": "pamixer --default-source -t"
+  },
+
+  "network": {
+    "format-wifi": "{essid} ({signalStrength}%)   ",
+    "format-ethernet": "{ipaddr}   ",
+    "format-linked": "{ifname} (No IP)   ",
+    "format-disconnected": "Disconnected ⚠  ",
     "tooltip": false
   },
+
+  "cpu": {
+    "interval": 1,
+    "format": "{icon0}{icon1}{icon2}{icon3} {usage:>2}%  ",
+    "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"],
+  },
+
+  "memory": {
+    "format": "{used:.1f}G/{total:.1f}G 󰘚 "
+  },
+
+  "custom/separator": {
+    "format": "| ",
+    "interval": "once",
+    "tooltip": false
+  },
+
+  "custom/power": {
+    "format": " ⏻ ",
+    "tooltip": "Power",
+    "on-click": "~/.config/waybar/scripts/power-menu.sh"
+  }
 }
