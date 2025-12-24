@@ -12,7 +12,7 @@ window#waybar {
 .modules-left,
 .modules-center,
 .modules-right {
-	background: rgba(50, 100, 50, 0.5);
+	background: rgba(25, 50, 25, .95);
 	border-radius: 5px;
 }
 
@@ -59,12 +59,12 @@ window#waybar {
 }
 
 #pulseaudio {
-	background: rgba(0, 0, 0, 0.2);
 	padding-right: 10px;
 }
 
 #pulseaudio:hover,
 #custom-wireguard:hover {
+	background: rgba(0, 0, 0, 0.2);
 	color: #0c0;
 }
 
