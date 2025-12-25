@@ -4,19 +4,19 @@ follow = keyboard
 width = 300
 origin = top-right
 offset = (20, 20)
-corner_radius = 8
+corner_radius = 5
 font = JetBrainsMono Nerd Font 10
 frame_width = 2
-frame_color = "#89b4fa"
+frame_color = "#0a0"
 
 [urgency_low]
-background = "#1e1e2e"
-foreground = "#cdd6f4"
+background = "#081608f2"
+foreground = "#080"
 
 [urgency_normal]
-background = "#1e1e2e"
-foreground = "#cdd6f4"
+background = "#193219f2"
+foreground = "#0a0"
 
 [urgency_critical]
-background = "#f38ba8"
-foreground = "#1e1e2e"
+background = "#963232f2"
+foreground = "#0f0"
