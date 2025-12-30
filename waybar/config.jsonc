@@ -84,7 +84,8 @@
 		"format-disabled": " off",
 		"format-connected": " {device_alias}",
 		"tooltip-format": "{controller_alias}\n{num_connections} device(s)",
-		"on-click": "kitty --class bluetui -e bluetui"
+		"on-click": "kitty --class bluetui -e bluetui",
+		"on-click-right": "bluetoothctl show | grep -q 'Powered: yes' && bluetoothctl power off || bluetoothctl power on"
 	},
 
 	"cpu": {
