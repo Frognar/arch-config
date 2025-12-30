@@ -12,7 +12,7 @@ window#waybar {
 .modules-left,
 .modules-center,
 .modules-right {
-	background: rgba(25, 50, 25, .95);
+	background: rgba(25, 50, 25, 1);
 	border-radius: 5px;
 }
 
@@ -50,6 +50,7 @@ window#waybar {
 #backlight,
 #network,
 #custom-wireguard,
+#bluetooth,
 #cpu,
 #memory,
 #battery,
