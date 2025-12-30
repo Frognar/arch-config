@@ -46,7 +46,7 @@
 		"format-source-muted": " ",
 		"format-icons": {
 			"headphone": "",
-			"hands-free": "",
+			"hands-free": "󰋎",
 			"headset": "󰋎",
 			"phone": "",
 			"portable": "",
