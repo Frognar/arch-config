@@ -13,6 +13,7 @@
 		"backlight",
 		"network",
 		"custom/wireguard",
+		"bluetooth",
 		"cpu",
 		"memory",
 		"battery",
@@ -66,7 +67,8 @@
 		"format-ethernet": "{ipaddr} 󰈀  ",
 		"format-linked": "{ifname} (No IP)",
 		"format-disconnected": "󰌙  ",
-		"tooltip": false
+		"tooltip": false,
+		"on-click": "kitty --class impala -e impala"
 	},
 
 	"custom/wireguard": {
@@ -75,6 +77,14 @@
 		"on-click": "~/.config/waybar/scripts/wg-toggle.sh",
 		"tooltip": true,
 		"tooltip-format": "WireGuard VPN"
+	},
+
+	"bluetooth": {
+		"format": " {status}",
+		"format-disabled": " off",
+		"format-connected": " {device_alias}",
+		"tooltip-format": "{controller_alias}\n{num_connections} device(s)",
+		"on-click": "kitty --class bluetui -e bluetui"
 	},
 
 	"cpu": {
